@@ -1,0 +1,17 @@
+---
+import { A } from "../components/a.ts";
+const items = ["A", "B", "C"];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <A items={items} client:load />
+  </body>
+</html>
