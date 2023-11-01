@@ -4,7 +4,6 @@ import "./b.ts";
 
 @customElement("component-a")
 export class A extends LitElement {
-  @property() name = "";
   @property({ type: Array, attribute: false }) items: string[] = [];
 
   public render() {
